@@ -1,0 +1,14 @@
+Building a production-ready delivery pipeline for deploying machine learning models involves several steps to ensure a smooth and reliable process. Here is a general outline for creating a production-ready delivery pipeline for iris flower classification model:
+
+1. Model Packaging:
+Package trained model into a format that can be easily deployed. sample model kept in a s3 bucket as a source.
+
+2. Api Development:
+Api accept request with iris data and returns predictions results via HTTP. flask code creates a api POST method http://localhost:5000/predict accept the data.
+
+3. deploying contents to the aws sagemaker using AWS CLI.
+Deploying a machine learning model on AWS SageMaker involves a few additional steps compared to a local deployment. Below, I'll outline the general steps to deploy the iris flower classification model on AWS SageMaker using the provided Flask app and Docker container.
+wrote a sagemaker run script that will automate above all steps.
+
+4. CICD pipeline:
+Jenkinsfile that having different stages automate both continous integration and delivery of opertions. 
